@@ -1,7 +1,9 @@
+import Layout from "./components/Layout";
+
 function App() {
   return (
-    <div className="w-full h-screen">
-      <h1>WebBank</h1>
+    <div className="w-full h-screen bg-gradient-to-tr from-gray-400 to-gray-800">
+      <Layout />
     </div>
   );
 }
