@@ -1,8 +1,13 @@
+import Layout from "./components/Layout";
+import LoginPage from "./pages/LoginPage";
+
 function App() {
   return (
-    <div className="w-full h-screen">
-      <h1>WebBank</h1>
-    </div>
+    <>
+      <Layout>
+        <LoginPage />
+      </Layout>
+    </>
   );
 }
 
