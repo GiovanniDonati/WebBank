@@ -1,10 +1,13 @@
 import Layout from "./components/Layout";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
-    <div className="w-full h-screen bg-gradient-to-tr from-gray-400 to-gray-800">
-      <Layout />
-    </div>
+    <>
+      <Layout>
+        <LoginPage />
+      </Layout>
+    </>
   );
 }
 
