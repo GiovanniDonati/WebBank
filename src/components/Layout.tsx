@@ -1,15 +1,17 @@
-import Card from "./Card";
 import Header from "./Header";
 
-const Layout = () => {
+interface ILayout {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: ILayout) => {
   return (
-    <>
+    <div className="flex flex-col w-full h-screen bg-gradient-to-tr from-gray-500 to-gray-800">
       <Header />
-      <div className="flex items-center justify-around h-5/6 bg-white">
-        <Card id={123} paragraph="Conta:" details="Giovanni Donati" />
-        <Card id={123} paragraph="Saldo:" details="R$ 500" />
+      <div className="flex flex-1 justify-center items-center w-full">
+        {children}
       </div>
-    </>
+    </div>
   );
 };
 
